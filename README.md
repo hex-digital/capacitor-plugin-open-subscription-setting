@@ -13,24 +13,28 @@ npx cap sync
 
 <docgen-index>
 
-* [`echo(...)`](#echo)
+* [`triggerOpenSettings()`](#triggeropensettings)
+* [`triggerOpenSubscriptions()`](#triggeropensubscriptions)
 
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-### echo(...)
+### triggerOpenSettings()
 
 ```typescript
-echo(options: { value: string; }) => Promise<{ value: string; }>
+triggerOpenSettings() => Promise<void>
 ```
 
-| Param         | Type                            |
-| ------------- | ------------------------------- |
-| **`options`** | <code>{ value: string; }</code> |
+--------------------
 
-**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+
+### triggerOpenSubscriptions()
+
+```typescript
+triggerOpenSubscriptions() => Promise<void>
+```
 
 --------------------
 

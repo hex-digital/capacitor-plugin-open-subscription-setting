@@ -7,12 +7,13 @@ import Capacitor
  */
 @objc(openSubscriptionSettingsPlugin)
 public class openSubscriptionSettingsPlugin: CAPPlugin {
-    private let implementation = openSubscriptionSettings()
+    @objc func triggerOpenSettings(_ call: CAPPluginCall) {
+        guard let url = URL(string: UIApplication.openSettingsURLString) else { return }
+        UIApplication.shared.open(url, options: [:])
+    }
 
-    @objc func echo(_ call: CAPPluginCall) {
-        let value = call.getString("value") ?? ""
-        call.resolve([
-            "value": implementation.echo(value)
-        ])
+    @objc func triggerOpenSubscriptions(_ call: CAPPluginCall) {
+        guard let url = URL(string: "itms://apps.apple.com/account/subscriptions") else { return }
+        UIApplication.shared.open(url, options: [:])
     }
 }

@@ -5,8 +5,10 @@ import type { openSubscriptionSettingsPlugin } from './definitions';
 export class openSubscriptionSettingsWeb
   extends WebPlugin
   implements openSubscriptionSettingsPlugin {
-  async echo(options: { value: string }): Promise<{ value: string }> {
-    console.log('ECHO', options);
-    return options;
+  async triggerOpenSettings(): Promise<void> {
+    console.log('OPEN SETTINGS TRIGGERRED');
+  }
+  async triggerOpenSubscriptions(): Promise<void> {
+    console.log('OPEN SUBSCRIPTIONS TRIGGERED');
   }
 }

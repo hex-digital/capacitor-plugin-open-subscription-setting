@@ -4,8 +4,7 @@ import android.util.Log;
 
 public class openSubscriptionSettings {
 
-    public String echo(String value) {
-        Log.i("Echo", value);
-        return value;
-    }
+    public void triggerOpenSubscriptions() {}
+
+    public void triggerOpenSettings() {}
 }
