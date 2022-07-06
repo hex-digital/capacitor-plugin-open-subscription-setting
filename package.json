@@ -1,6 +1,6 @@
 {
   "name": "open-subscription-settings",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Allows to user to open the subscription settings of their native platform from within the application.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
