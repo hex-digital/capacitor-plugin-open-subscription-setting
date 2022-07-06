@@ -17,10 +17,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hex-digital/capacitor-plugin-open-subscription-settings.git"
+    "url": "git+https://github.com/hex-digital/capacitor-plugin-open-subscription-setting.git"
   },
   "bugs": {
-    "url": "https://github.com/hex-digital/capacitor-plugin-open-subscription-settings/issues"
+    "url": "https://github.com/hex-digital/capacitor-plugin-open-subscription-setting/issues"
   },
   "keywords": [
     "capacitor",
